@@ -1,7 +1,6 @@
 class TasksController < ApplicationController
   def index
     @tasks = Task.all
-    @status = Task.all
   end
   
   def show
@@ -11,7 +10,7 @@ class TasksController < ApplicationController
   
   def new
     @task = Task.new
-    @status = Task.new
+
   end  
     
   def create
