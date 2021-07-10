@@ -5,7 +5,6 @@ class TasksController < ApplicationController
   
   def show
     @task = Task.find(params[:id])
-    @status = Task.find(params[:id])
   end
   
   def new
@@ -27,7 +26,6 @@ class TasksController < ApplicationController
 
   def edit
     @task = Task.find(params[:id])
-    @status = Task.find(params[:id])
   end
 
   def update
@@ -58,11 +56,10 @@ class TasksController < ApplicationController
     params.require(:task).permit(:content, :status)
   end    
   
-  private
 
   def set_task
     @task = Task.find(params[:id])
-    @status = Task.find(params[:id])
+
   end
 
 
