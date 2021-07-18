@@ -46,9 +46,9 @@ production:
   adapter: postgresql
   encoding: unicode
   pool: 5
-  database: message_board_production
-  username: message_board
-  password: <%= ENV['MESSAGE_BOARD_DATABASE_PASSWORD'] %>
+  database: task_list_production
+  username: tasklist_board
+  password: <%= ENV['TASKLIST_DATABASE_PASSWORD'] %>
 #     url: <%= ENV['MY_APP_DATABASE_URL'] %>
 #
 # Read https://guides.rubyonrails.org/configuring.html#configuring-a-database
